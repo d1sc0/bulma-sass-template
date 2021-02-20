@@ -2,45 +2,85 @@
 <html lang="en">
 
 <head>
- <meta charset="utf-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <title>My custom Bulma website</title>
- <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bulma Template Starter</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="navbar.js"></script>
 </head>
 
 <body>
- <section class="section">
- <h1 class="title">
-  Bulma
- </h1>
 
- <p class="subtitle">
-  Modern CSS framework based on <a
-   href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">Flexbox</a>
- </p>
+  <!-- Navbar -->
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#">
+        Site Title
+      </a>
 
- <div class="field">
-  <div class="control">
-   <input class="input" type="text" placeholder="Input">
-  </div>
- </div>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
 
- <div class="field">
-  <p class="control">
-   <span class="select">
-    <select>
-     <option>Select dropdown</option>
-    </select>
-   </span>
-  </p>
- </div>
+    <div id="navbarBasic" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item">
+          Home
+        </a>
 
- <div class="buttons">
-  <a class="button is-primary">Primary</a>
-  <a class="button is-link">Link</a>
- </div>
- </section>
+        <a class="navbar-item">
+          Documentation
+        </a>
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-primary">
+              <strong>Sign up</strong>
+            </a>
+            <a class="button is-light">
+              Log in
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero is-primary">
+    <div class="hero-body">
+      <p class="title">
+        Primary hero
+      </p>
+      <p class="subtitle">
+        Primary subtitle
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="section">
+    <h2 class="subtitle">Section</h2>
+    <p>
+      A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading. I'm
+      baby woke slow-carb helvetica vegan health goth succulents knausgaard gastropub man braid farm-to-table cronut.
+      VHS
+      air plant poke salvia, scenester plaid you probably haven't heard of them meh gastropub 3 wolf moon.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Site Title</strong> by <a href="#">Stuart Macknenzie</a>.
+      </p>
+    </div>
+  </footer>
+
 </body>
 
 </html>
